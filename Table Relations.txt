@@ -1,0 +1,26 @@
+Relations:
+  resumedata(id, name, email, phone, address, city, state, zip, password)
+	Primary Key: id
+
+	career(car_id, car_text)
+	Primary Key: car_id
+
+	qualifications(qual_id, qualification, car_id)
+	Primary Key: qual_id
+	Foreign Key: car_id
+
+	skills(skill_id, skill, experience, years, car_id)
+	Primary Key: skill_id
+	Foreign Key: car_id
+
+	accomplishments(acc_id, accomplishment, car_id)
+	Primary Key: acc_id
+	Foreign Key: car_id
+
+	work(work_id, company, city, state, position, duties, start_date, end_date, car_id)
+	Primary Key: work_id
+	Foreign Key: car_id
+
+	education(ed_id, school, city, state, degree, coursework, start_date, end_date, car_id)
+	Primary Key: work_id
+	Foreign Key: car_id
